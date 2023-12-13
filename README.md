@@ -11,26 +11,26 @@ Main focus is on functionality rather then UI.
 
 Root directory structure is present at the bottom.
 
-- `assets` Contains all static assets like pngs.
-- `components` Contains components to render UI of single items.
-- `containers` Contains components to communicate with API / Redux and pass data to UI respective component using FlatList or any other component.
-- `navigation` Contains router and navigation setup.
-- `screens` Contains UI screens to render respective container.
-- `store` Contains redux setup.
-- `utils` Contains external libs and utilities.
+- [assets](/src/assets) Contains all static assets like pngs.
+- [components](/src/components) Contains components to render UI of single items.
+- [containers](/src/containers) Contains components to communicate with API / Redux and pass data to UI respective component using FlatList or any other component.
+- [navigation](/src/navigation) Contains router and navigation setup.
+- [screens](/src/screens) Contains UI screens to render respective container.
+- [store](/src/store) Contains redux setup.
+- [utils](/src/utils) Contains external libs and utilities.
 
 ### Redux setup
 
 Ducks pattern is used for redux setup using `@reduxjs/toolkit`.
-`entities` folder contains redux setup for each specific module with specific file name. Each file `contains` `actions`, `reducers`, `functions / callbacks` and `selectors`.
+[entities](src/store/entities) folder contains redux setup for each specific module with the specific file name. Each file `contains` `actions`, `reducers`, `functions/callbacks` and `selectors`.
 
 ### Tests cases
 
-`Jest` is used for writin test cases. `__test__` folder contains all test cases. There are 3 modules in `__test__` folder.
+`Jest` is used for writing test cases. `__tests__` folder contains all test cases. There are 3 modules in [__tests__](__tests__) folder.
 
-- `MenuListContainer.test.tsx` contains 2 tests for main menu rendering.
-- `ProductListContainer.test.tsx` contains 2 tests for products rendering and verify updates.
-- `CartContainer.test.tsx` contains 3 tests for cart rendering, adding and updating item quantity.
+- [MenuListContainer.test.tsx](__tests__/MenuListContainer.test.tsx) contains 2 tests for main menu rendering.
+- [ProductListContainer.test.tsx](__tests__/ProductListContainer.test.tsx) contains 2 tests for products rendering and verifying updates.
+- [CartContainer.test.tsx](__tests__/CartContainer.test.tsx) contains 3 tests for cart rendering, adding and updating item quantity.
 
 ### Major libraries
 
